@@ -1,0 +1,95 @@
+/* 1. Global Reset - Very important for responsive design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* This prevents padding from breaking your layout */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 15px 5%; /* Using % for padding is safer for mobile */
+}
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 60px 20px; /* Vertical padding 60px, Horizontal 20px */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 600px; /* Prevents text from becoming too wide on desktop */
+    margin: 0 auto 30px; /* Centers the paragraph */
+}
+
+/* Cards/Buttons Section */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Allows buttons to drop to next line if screen is tiny */
+}
+
+.card {
+    background: steelblue;
+    color: white;
+    padding: 15px 25px;
+    min-width: 120px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* --- Mobile Responsive (768px and below) --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        /* Removing the flex-direction: column here often looks cleaner 
+           unless you have many links. I'll keep it grouped but spaced. */
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem; /* Smaller text for smaller screens */
+    }
+
+    .cards {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        align-items: center;
+    }
+
+    .card {
+        width: 80%; /* Make buttons wider and easier to tap on mobile */
+    }
+}
