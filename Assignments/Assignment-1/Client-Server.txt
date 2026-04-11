@@ -1,0 +1,61 @@
+Client–Server Architecture is a model where:
+
+Client → requests a service
+Server → provides the service
+
+The client does not store the main data, it only requests and displays it.
+The server stores, processes, and sends data to many clients.
+
+Examples
+Browser (Chrome, Edge) → Client
+Web server (Google, Amazon servers) → Server
+
++------------+        Request        +-------------+
+|            |  ------------------>  |             |
+|   CLIENT   |                        |   SERVER    |
+| (Browser)  |  <------------------  | (Web Server)|
+|            |        Response       |             |
++------------+                        +-------------+
+
+Client: Laptop / Mobile / Browser
+Server: Stores website files, database, logic
+
+
+
+Let’s say you open www.google.com
+ 
+
+Step 1: You enter the URL
+You type www.google.com in the browser
+Browser acts as a client
+
+Step 2: DNS Lookup
+Browser asks DNS server:
+“What is the IP address of www.google.com?”
+DNS returns an IP like:142.250.190.14
+DNS = Internet’s phonebook
+
+Step 3: Client Sends Request
+Browser sends an HTTP/HTTPS request to the server IP
+Example:GET /index.html HTTP/1.1
+
+Step 4: Server Processes the Request
+Server:Receives request
+Finds required files (HTML, CSS, JS)
+Fetches data from database if needed
+
+Step 5: Server Sends Response
+Server sends back:
+HTML page
+CSS (styles)
+JavaScript (logic)
+Images
+
+Step 6: Browser Renders the Website
+Browser:Reads HTML → structure
+Applies CSS → design
+Runs JavaScript → interaction
+Finally, you see the website on screen
+
+Client–Server Architecture means the work is divided.
+The client requests and displays, while the server stores, processes, and responds.
