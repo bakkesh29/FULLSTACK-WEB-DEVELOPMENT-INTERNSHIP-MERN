@@ -1,0 +1,11 @@
+let n = Number(prompt("Enter Total NO Of Calculations"))
+
+for (let i = 0; i <= n; i++) {
+    let num1 = Number(prompt("Enter The number:"));
+    num1 += num1
+}
+
+console.log("Addition:", num1);
+console.log("Subtraction:", num1);
+console.log("Multiplication:", num1);
+console.log("Division:", num1);
