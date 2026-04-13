@@ -1,0 +1,66 @@
+YouTube
+
+1. Header / Navigation Bar
+Logo
+Search bar
+Menu icon
+Profile icon
+Notifications
+
+2. Sidebar
+Home
+Shorts
+Subscriptions
+Library
+History
+
+3. Main Content Area
+Video cards
+Video thumbnails
+Video titles
+Channel name
+View count
+
+4. Footer (Optional on some pages)
+Links
+About
+Terms
+Privacy
+
+
+-------------------------------------
+|             HEADER                |
+| Logo | Search Bar | Profile Icon |
+-------------------------------------
+| SIDEBAR |         MAIN AREA       |
+|         | ---------------------- |
+| Menu    |  Video Card           |
+| Home    |  Thumbnail            |
+| Shorts  |  Title                |
+| Subscr. |  Channel Name         |
+| Library |  Views                |
+|         | ---------------------- |
+|         |  Video Card           |
+|         |  Thumbnail            |
+-------------------------------------
+|               FOOTER              |
+-------------------------------------
+
+
+A website is built using small reusable components like header, sidebar, and cards.
+These components help developers organize the layout and reuse code easily in modern frameworks such as React.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
