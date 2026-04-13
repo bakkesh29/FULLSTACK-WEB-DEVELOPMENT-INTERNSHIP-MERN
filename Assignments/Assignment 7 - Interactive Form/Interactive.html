@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Colorful Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 320px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #2575fc;
+            box-shadow: 0 0 5px #2575fc;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+            text-align: left;
+        }
+
+        .success {
+            color: green;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>✨ Registration Form</h2>
+
+        <form id="myForm">
+            <input type="text" id="name" placeholder="Enter Name">
+            <div id="nameError" class="error"></div>
+
+            <input type="email" id="email" placeholder="Enter Email">
+            <div id="emailError" class="error"></div>
+
+            <input type="password" id="password" placeholder="Enter Password">
+            <div id="passwordError" class="error"></div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="successMsg" class="success"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
