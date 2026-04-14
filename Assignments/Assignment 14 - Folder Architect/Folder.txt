@@ -1,0 +1,39 @@
+my-app/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── assets/          # images, icons, fonts
+│   ├── components/      # reusable UI components
+│   │   ├── Navbar.jsx
+│   │   ├── ProductCard.jsx
+│   │
+│   ├── pages/           # pages/screens
+│   │   ├── Home.jsx
+│   │   ├── Products.jsx
+│   │
+│   ├── services/        # API calls
+│   │   └── api.js
+│   │
+│   ├── hooks/           # custom hooks
+│   │   └── useFetch.js
+│   │
+│   ├── utils/           # helper functions
+│   │   └── helpers.js
+│   │
+│   ├── styles/          # global styles
+│   │   └── main.css
+│   │
+│   ├── App.jsx
+│   └── index.js
+│
+├── package.json
+└── README.md
+
+
+components/ → reusable UI blocks
+pages/ → route-based views
+services/ → API fetching logic
+hooks/ → reusable logic
+utils/ → helper functions
