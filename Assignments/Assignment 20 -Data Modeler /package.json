@@ -1,0 +1,14 @@
+{
+    "name": "blog-data-modeler",
+    "version": "1.0.0",
+    "description": "MongoDB schema design for blogging platform",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "Your Name",
+    "license": "ISC",
+    "dependencies": {
+        "mongoose": "^7.0.0"
+    }
+}

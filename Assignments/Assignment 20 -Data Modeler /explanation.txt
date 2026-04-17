@@ -1,0 +1,30 @@
+Blogging Platform - MongoDB Schema Design
+
+This project designs a MongoDB schema for a blogging platform.
+
+Collections:
+
+1. User
+2. Post
+3. Comment
+
+User:
+Stores user information like name, email, password, and bio.
+
+Post:
+Stores blog posts with title, content, author reference, and tags.
+
+Comment:
+Stores comments made by users on posts.
+
+Relationships:
+
+* One User can create many Posts.
+* One Post can have many Comments.
+* One User can write many Comments.
+
+References:
+ObjectId is used to link collections (User, Post, Comment).
+
+Conclusion:
+This schema avoids data duplication and ensures scalability.
